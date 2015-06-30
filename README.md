@@ -129,7 +129,7 @@ API
     * [#timeseries(dataSource, [rawQuery])](#timeseriesquery-timeseriesdatasource-rawquery)
     * [#topN(dataSource, [rawQuery])](#topnquery-topndatasource-rawquery)
 * [Client](#client-druidclient)
-    * [Client(url, [options])](#clienturl)
+    * [Client(url, [options])](#clienturl-options)
     * [.fromZooKeeper(connectionString, discoveryPath, [options], callback)](#static-void-fromzookeeperconnectionstring-discoverypath-options-callback)
     * [#cancel(query, callback)](#void-cancelquery-callback-1)
     * [#dataSources(callback)](#void-datasourcescallback)
@@ -282,7 +282,7 @@ __Arguments__
 
 * url `string` - Druid node URL.
 * options `object` - Options for the client connection. We have only one option currently available:
-    * `debug` - A function to call each time the client is executing a query which gets passed a reference to the query. Alternatively, set to true to log the query with console.log(). Default: `false`.
+    * `debug` - A function to call each time the client is executing a query which gets passed a reference to the query. Alternatively, set to `true` to log the query with console.log(). Default: `false`.
 
 ---
 
